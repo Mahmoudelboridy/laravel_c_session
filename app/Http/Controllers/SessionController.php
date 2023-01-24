@@ -36,6 +36,17 @@ class SessionController extends Controller
             return 'no';
         }
     }
+    public function test(){
+        if(session::has('name')){
+            echo session::get('name')."<br>";
+            echo session::get('id')."<br>";
+            return 'yes';
+        }
+        else{
+            return 'no';
+        }
+
+    }
 }
 
 //session::flush();  تحذف كله

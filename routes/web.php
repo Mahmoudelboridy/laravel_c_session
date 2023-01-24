@@ -18,4 +18,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/session',[SessionController::class,'session']);
+Route::get('/test',[SessionController::class,'test']);
 Route::get('/logout',[SessionController::class,'logout']);
